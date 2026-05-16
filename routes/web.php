@@ -31,3 +31,16 @@ Route::post('/about', function () {
     ];
     return view('about', compact('name', 'Courses'));
 });
+
+Route::get('/tasks', function () {
+    return view('tasks');
+});
+
+Route::post('create', function () {
+    $tasks_name = $_POST['name'];
+    DB::table('tasks')->insert([
+        'name' => $tasks_name,
+       
+    ]);
+    return view('tasks');
+});
