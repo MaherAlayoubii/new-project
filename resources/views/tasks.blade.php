@@ -16,8 +16,8 @@
                         <!-- Task Name -->
                         <div class="mb-3">
                             <label for="task-name" class="form-label">Task</label>
-                            <input type="text" name="name" id="task-name" class="form-control" value="{{ $task->name }}">
-                        </div>
+                            <input type="text" name="name" id="task-name" class="form-control" value="{{ $task->name }}" required>
+                        </div> 
 
                         <!-- Update Task Button -->
                         <div>
@@ -38,7 +38,7 @@
                         <!-- Task Name -->
                         <div class="mb-3">
                             <label for="task-name" class="form-label">Task</label>
-                            <input type="text" name="name" id="task-name" class="form-control" value="">
+                            <input type="text" name="name" id="task-name" class="form-control" value="" required>
                         </div>
 
                         <!-- Add Task Button -->
